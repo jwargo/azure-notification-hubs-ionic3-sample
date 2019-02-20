@@ -6,10 +6,10 @@ DEST="/Users/johnwargo/dev/public-projects/azure-notification-hubs-ionic3-sample
 echo Copying files to pub folder
 # cp -a -v . "$DEST"
 cp ./* "$DEST/"
-cp -r ./resources "$DEST/resources"
-cp -r ./screenshots "$DEST/screenshots"
-cp -r ./src "$DEST/src"
-cp -r ./www "$DEST/www"
+cp -r ./resources "$DEST"
+cp -r ./screenshots "$DEST"
+cp -r ./src "$DEST"
+cp -r ./www "$DEST"
 
 echo Replacing config files
 cp -v "$SOURCE/config/config.ts" "$DEST/src/app/"

@@ -9,7 +9,7 @@ cp ./* "$DEST/"
 cp -r ./resources "$DEST"
 cp -r ./screenshots "$DEST"
 cp -r ./src "$DEST"
-cp -r ./www "$DEST"
+# cp -r ./www "$DEST"
 
 echo Replacing config files
 cp -v "$SOURCE/config/config.ts" "$DEST/src/app/"

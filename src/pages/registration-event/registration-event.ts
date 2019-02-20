@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { Registration } from '../../interfaces/events';
+import { EventType, Registration } from '../../interfaces/events';
 
 @IonicPage()
 @Component({
@@ -10,8 +10,15 @@ import { Registration } from '../../interfaces/events';
 })
 export class RegistrationEventPage {
 
-  // event: Registration;
-  event: any = {};
+  private event: Registration = {
+    // initialize as empty object just to start, otherwise 
+    // the .html page will crash on load.
+    type: EventType.registration,
+    title: '',
+    registrationId: '',
+    azureRegId: '',
+    received: new Date(Date.now())
+  };
 
   constructor(
     public navCtrl: NavController,
@@ -23,7 +30,7 @@ export class RegistrationEventPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistrationEventPage');
     // Pull the event we received from the home page    
-    this.event = this.navParams.get("event");    
+    this.event = this.navParams.get("event");
   }
 
 }

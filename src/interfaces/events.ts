@@ -15,7 +15,7 @@ export interface Notification {
     count: number;
     sound: string;
     image: string;
-    additionalData: any[];
+    additionalData: any;
     received: Date;
 }
 

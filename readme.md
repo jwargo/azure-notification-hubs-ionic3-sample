@@ -38,5 +38,3 @@ When you tap on the Registration event, a page opens displaying the registration
 When you tap on a Notification event, a page opens displaying data from the notification as shown in the following figure.
 
 ![Notification Event](screenshots/figure-04.png)
-
-The app doesn't currently process additional data sent with a notification. We hope to fix that soon.
